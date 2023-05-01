@@ -1,0 +1,137 @@
+body{
+    background-color: #282424;
+}
+#head{
+    display: flex;
+    align-items: end;
+    font-size: 1.5vw;
+    
+}
+#logo{
+    margin: 0.6vw;
+    width: 2.5vw;
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+}
+#logo:hover{
+    width: 3vw;
+}
+#name{
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;  
+    margin: 0.6vw;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.5s ease-in-out ;
+}
+#name:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+    
+
+#titel{
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 2.5vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: #efefef;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+#anzeige{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+}
+#zug{
+    font-size: 1.5vw;
+    color: #efefef;
+}
+#halter{
+    background-color: yellow;
+    margin-top: 3vw;
+    border-radius: 2em;
+}
+#halter:hover #resetknopf{
+    background-color:#807e7e;
+    transform: translateY(-0.3vw);
+}
+#resetknopf{
+    width: 12vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    border-radius: 2em;
+    border-width: 0.2vw;
+    border-color: yellow;
+    background-color: #A7A0A0;
+    color: #efefef;
+    color: #282424;
+    color: black;
+    transition: all ease-in-out 0.15s;
+}
+#resetknopf:hover{
+    background-color:#807e7e;
+    transform: translateY(-0.3vw);
+}
+#teleport{
+    margin-top: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#zurBild{
+    width: 3vw;
+    margin: 1vw;
+    transition: all ease-in-out 0.2s;
+}
+#zurBild:hover{
+    transform: translate(-0.2vw, -0.2vw);
+}
+#vorBild{
+    width: 3vw;
+    margin: 1vw;
+    transition: all ease-in-out 0.2s;
+}
+#vorBild:hover{
+    transform: translate(0.2vw, -0.2vw);
+}
+#spielfeld {
+    display: grid;
+    grid-template-columns:repeat(7, 1fr);
+    width:min(100vw, 88.12vh);
+    
+    gap:0.5vw;
+    margin-left: 3%;
+    justify-self: left;
+}
+
+#spielfeld div {
+    aspect-ratio: 1;
+}
+
+
+
+
+.feldleer {
+    background-color: 	#676060;
+}
+.feldeins {
+    background-color: darkgreen;
+}
+.feldzwei {
+    background-color: 	yellowgreen;
+}
